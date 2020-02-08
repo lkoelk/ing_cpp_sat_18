@@ -10,15 +10,9 @@ private:
 public:
     ceasar_cypher(string input_string, int number_for_shift);
     void code();
-    string getter_str();
     void setter_str(string input);
     
 };
-
-string ceasar_cypher::getter_str()
-{
-    return to_code;
-}
 
 void ceasar_cypher::setter_str(string input)
 {
@@ -46,7 +40,6 @@ void ceasar_cypher::code()
 
 int main()
 {
-
     // char ch = getchar();
     // cout << ch;
     string input;
@@ -56,5 +49,5 @@ int main()
     // cout << endl;
     ceasar_cypher test1 = ceasar_cypher(input, sh);
     test1.code();
-    cout << test1.getter_str() << endl;
+    // cout << test1.getter_str() << endl;
 }
