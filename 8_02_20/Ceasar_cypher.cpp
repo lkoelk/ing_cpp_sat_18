@@ -6,7 +6,7 @@ class ceasar_cypher
 {
 private:
     string  to_code;
-    int     shift;
+    int shift;
 public:
     ceasar_cypher(string input_string, int number_for_shift);
     void code();
